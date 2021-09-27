@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:getx_route_management/views/screen2/screen2_view.dart';
 import 'package:getx_route_management/views/screen3/screen3_view.dart';
 import '/widgets/build_elevated_button.dart';
@@ -19,28 +20,39 @@ class Screen1 extends StatelessWidget {
             children: [
               buildElevatedButton(
                 text: 'Go back',
-                onPressed: () => Navigator.pop(context),
+                onPressed: () {
+                  //# Navigation Using Normal way #
+                  // Navigator.pop(context);
+                  //# Navigation Using Getx #
+                  Get.back();
+                },
               ),
               buildElevatedButton(
                 text: 'Go to Second Screen',
                 onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const Screen2(),
-                    ),
-                  );
+                  //# Navigation Using Normal way #
+                  // Navigator.push(
+                  //   context,
+                  //   MaterialPageRoute(
+                  //     builder: (context) => const Screen2(),
+                  //   ),
+                  // );
+                  //# Navigation Using Getx #
+                  Get.to(const Screen2());
                 },
               ),
               buildElevatedButton(
                 text: 'Go to Third Screen',
                 onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                      builder: (context) => const Screen3(),
-                    ),
-                  );
+                  //# Navigation Using Normal way #
+                  // Navigator.push(
+                  //   context,
+                  //   MaterialPageRoute(
+                  //     builder: (context) => const Screen3(),
+                  //   ),
+                  // );
+                  //# Navigation Using Getx #
+                  Get.to(const Screen3());
                 },
               ),
             ]),
