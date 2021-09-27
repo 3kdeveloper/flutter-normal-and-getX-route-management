@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.getx_route_management">
    <application
-        android:label="getx_route_management"
+        android:label="GetxRM"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
