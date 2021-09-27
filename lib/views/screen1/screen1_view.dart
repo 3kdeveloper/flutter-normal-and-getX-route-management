@@ -6,7 +6,7 @@ import '/widgets/build_elevated_button.dart';
 
 class Screen1 extends StatelessWidget {
   const Screen1({Key? key}) : super(key: key);
-
+  static const routeName = 'Screen1';
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,9 +22,9 @@ class Screen1 extends StatelessWidget {
                 text: 'Go back',
                 onPressed: () {
                   //# Navigation Using Normal way #
-                  // Navigator.pop(context);
+                  Navigator.pop(context);
                   //# Navigation Using Getx #
-                  Get.back();
+                  // Get.back();
                 },
               ),
               buildElevatedButton(
@@ -38,7 +38,10 @@ class Screen1 extends StatelessWidget {
                   //   ),
                   // );
                   //# Navigation Using Getx #
-                  Get.to(const Screen2());
+                  // Get.to(const Screen2());
+
+                  //# Named Route #
+                  Navigator.pushNamed(context, Screen2.routeName);
                 },
               ),
               buildElevatedButton(
@@ -52,7 +55,10 @@ class Screen1 extends StatelessWidget {
                   //   ),
                   // );
                   //# Navigation Using Getx #
-                  Get.to(const Screen3());
+                  // Get.to(const Screen3());
+
+                  //# Named Route #
+                  Navigator.pushNamed(context, Screen3.routeName);
                 },
               ),
             ]),

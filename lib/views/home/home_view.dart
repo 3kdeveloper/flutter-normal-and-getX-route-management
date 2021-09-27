@@ -33,7 +33,10 @@ class HomeScreen extends StatelessWidget {
                 //   ),
                 // );
                 //# Navigation Using Getx #
-                Get.to(const Screen1());
+                // Get.to(const Screen1());
+
+                //# Named Route #
+                Navigator.pushNamed(context, Screen1.routeName);
               },
             ),
             buildElevatedButton(
@@ -47,7 +50,10 @@ class HomeScreen extends StatelessWidget {
                 //   ),
                 // );
                 //# Navigation Using Getx #
-                Get.to(const Screen2());
+                // Get.to(const Screen2());
+
+                //# Named Route #
+                Navigator.pushNamed(context, Screen2.routeName);
               },
             ),
             buildElevatedButton(
@@ -61,7 +67,10 @@ class HomeScreen extends StatelessWidget {
                 //   ),
                 // );
                 //# Navigation Using Getx #
-                Get.to(const Screen3());
+                // Get.to(const Screen3());
+
+                //# Named Route #
+                Navigator.pushNamed(context, Screen3.routeName);
               },
             ),
           ],
