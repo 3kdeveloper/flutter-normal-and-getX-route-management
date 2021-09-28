@@ -1,10 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:getx_route_management/views/screen1/screen1_view.dart';
-import 'package:getx_route_management/views/screen2/screen2_view.dart';
-import 'package:getx_route_management/views/screen3/screen3_view.dart';
-
-import 'views/home/home_view.dart';
+import 'package:getx_route_management/utils/exports.dart';
 
 void main() {
   runApp(const MyApp());
