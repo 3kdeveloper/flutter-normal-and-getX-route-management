@@ -1,6 +1,8 @@
 # getx_route_management
 
-A new Flutter project.
+This Project is only about Navigation in Flutter.
+In this project you will find Flutter normal navigation and
+Navigation using GetX.
 
 ## Getting Started
 
