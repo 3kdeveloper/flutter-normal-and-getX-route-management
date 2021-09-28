@@ -1,9 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:getx_route_management/views/screen1/screen1_view.dart';
-import 'package:getx_route_management/views/screen2/screen2_view.dart';
-import 'package:getx_route_management/views/screen3/screen3_view.dart';
-import '/widgets/build_elevated_button.dart';
+import 'package:getx_route_management/utils/exports.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -36,7 +31,10 @@ class HomeScreen extends StatelessWidget {
                 // Get.to(const Screen1());
 
                 //# Named Route #
-                Navigator.pushNamed(context, Screen1.routeName);
+                // Navigator.pushNamed(context, Screen1.routeName);
+
+                //# GetX Named Route #
+                Get.toNamed('/${Screen1.routeName}');
               },
             ),
             buildElevatedButton(
@@ -53,7 +51,10 @@ class HomeScreen extends StatelessWidget {
                 // Get.to(const Screen2());
 
                 //# Named Route #
-                Navigator.pushNamed(context, Screen2.routeName);
+                // Navigator.pushNamed(context, Screen2.routeName);
+
+                //# GetX Named Route #
+                Get.toNamed('/${Screen2.routeName}');
               },
             ),
             buildElevatedButton(
@@ -70,7 +71,10 @@ class HomeScreen extends StatelessWidget {
                 // Get.to(const Screen3());
 
                 //# Named Route #
-                Navigator.pushNamed(context, Screen3.routeName);
+                // Navigator.pushNamed(context, Screen3.routeName);
+
+                //# GetX Named Route #
+                Get.toNamed('/${Screen3.routeName}');
               },
             ),
           ],

@@ -1,8 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:getx_route_management/views/screen1/screen1_view.dart';
-import 'package:getx_route_management/views/screen2/screen2_view.dart';
-import '/widgets/build_elevated_button.dart';
+import 'package:getx_route_management/utils/exports.dart';
 
 class Screen3 extends StatelessWidget {
   const Screen3({Key? key}) : super(key: key);
@@ -23,9 +19,9 @@ class Screen3 extends StatelessWidget {
                 text: 'Go back',
                 onPressed: () {
                   //# Navigation Using Normal way #
-                  Navigator.pop(context);
+                  // Navigator.pop(context);
                   //# Navigation Using Getx #
-                  // Get.back();
+                  Get.back();
                 },
               ),
               buildElevatedButton(
@@ -42,7 +38,10 @@ class Screen3 extends StatelessWidget {
                   // Get.to(const Screen1());
 
                   //# Named Route #
-                  Navigator.pushNamed(context, Screen1.routeName);
+                  // Navigator.pushNamed(context, Screen1.routeName);
+
+                  //# GetX Named Route #
+                  Get.toNamed('/${Screen1.routeName}');
                 },
               ),
               buildElevatedButton(
@@ -59,7 +58,10 @@ class Screen3 extends StatelessWidget {
                   // Get.to(const Screen2());
 
                   //# Named Route #
-                  Navigator.pushNamed(context, Screen2.routeName);
+                  // Navigator.pushNamed(context, Screen2.routeName);
+
+                  //# GetX Named Route #
+                  Get.toNamed('/${Screen2.routeName}');
                 },
               ),
             ]),
